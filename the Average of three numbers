@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main()
+{
+    int n,p,m,avg,k;
+    printf("Enter three numbers:");
+    scanf("%d%d%d",&n,&m,&p);
+    k=n+m+p;
+    avg=k/3;
+    printf("the average of three numbers: %d",avg);
+    return 0;
+}
