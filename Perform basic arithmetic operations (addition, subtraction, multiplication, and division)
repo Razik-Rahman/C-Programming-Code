@@ -1,0 +1,58 @@
+#include <stdio.h>
+int main() 
+{
+    float n,m,r;
+    int ch;
+    while (1) 
+    {
+        printf("\nMenu:\n");
+        printf("1. Addition\n");
+        printf("2. Subtraction\n");
+        printf("3. Multiplication\n");
+        printf("4. Division\n");
+        printf("5. Exit\n");
+        printf("Enter your choice: ");
+        scanf("%d", &ch);
+        if (ch==5) 
+        {
+            printf("Exiting the program. Goodbye!\n");
+            break;
+        }
+        printf("Enter the two numbers: ");
+        scanf("%f%f", &n,&m);
+        switch (ch) 
+        {
+            case 1:
+                r=n+m;
+                printf("The Sum is: %f\n",r);
+                break;
+
+            case 2:
+                r=n-m;
+                printf("The Subtraction is: %f\n",r);
+                break;
+
+            case 3:
+                r=n*m;
+                printf("The Multiplication is: %f\n",r);
+                break;
+
+            case 4:
+                if (m!=0) 
+                {
+                    r=n/m;
+                    printf("The result of division is: %f\n",r);
+                } 
+                else 
+                {
+                    printf("Error!!\n");
+                }
+                break;
+
+            default:
+                break;
+        }
+    }
+    return 0;
+}
+
