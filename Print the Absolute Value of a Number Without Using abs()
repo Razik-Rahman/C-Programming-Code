@@ -1,10 +1,17 @@
 #include <stdio.h>
 int main() 
 {
-    int a,b,m;
-    printf("Enter two numbers: ");
-    scanf("%d%d",&a,&b);
-    m=a*(a>=b)+b*(b>a);
-    printf("The maximum number is: %d\n",m);
+    int n,ab;
+    printf("Enter the number: ");
+    scanf("%d",&n);
+    if (n<0) 
+    {
+        ab=(-n);
+    } 
+    else 
+    {
+        ab=n;
+    }
+    printf("The absolute value of %d is %d\n",n,ab);
     return 0;
 }
