@@ -1,0 +1,42 @@
+Logic 1
+#include <stdio.h>
+int main()
+{
+    int m, n;
+    printf("\nEnter the first number\n");
+    scanf("\n%d", &m);
+    printf("\nEnter the second number\n");
+    scanf("\n%d", &n);
+    switch (m > n) 
+    {
+        case 0:
+        printf("\nThe greater number is %d\n", n);
+        break;
+        case 1:
+        printf("\nThe greater number is %d\n", m);
+        break;
+        default:
+        printf("\nBoth number's are same\n");
+    }
+}
+Logic 2
+#include <stdio.h>
+int main()
+{
+    int a, b;
+    printf("Enter two numbers: ");
+    scanf("%d%d", &a, &b);
+    if(a > b)
+    {
+        printf("%d is maximum", a);        
+    }
+    if(b > a)
+    {
+        printf("%d is maximum", b);
+    }
+    if(a == b)
+    {
+        printf("Both are equal");
+    }
+    return 0;
+}
