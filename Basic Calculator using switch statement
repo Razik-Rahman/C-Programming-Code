@@ -1,0 +1,33 @@
+#include <stdio.h>
+int main()
+{
+    int a,b,c,d,e,f,n;
+    while(1)
+    {
+        printf("1.Addition\n2.Difference\n3.Division\n4.Multiplication\n");
+        printf("Enter two number ");
+        scanf("%d%d",&a,&b);
+        printf("Enter your choice:");
+        scanf("%d",&n);
+        switch(n)
+        {
+            case 1:
+            c=a+b;
+            printf("the sum is %d\n",c);
+            break;
+            case 2:
+            d=a-b;
+            printf("the difference is %d\n",d);
+            break;
+            case 3:
+            e=a/b;
+            printf("the division is %d\n",e);
+            break;
+            case 4:
+            f=a*b;
+            printf("the multiplication is %d\n",f) ;
+            break;
+        }
+    }
+    
+}
