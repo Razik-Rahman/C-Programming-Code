@@ -1,0 +1,28 @@
+#include <stdio.h>
+int main() 
+{
+    char ch;
+    printf("Enter a character: ");
+    scanf("%c", &ch);
+    switch (ch) 
+    {
+        case 1:
+            if ((ch>='A'&&ch<='Z')||(ch>='a'&&ch<= 'z')) 
+            {
+                printf("'%c' is an Alphabet.\n", ch);
+                break;
+            }
+        case 2:
+            if (ch >= '0' && ch <= '9') 
+            {
+                printf("'%c' is a Digit.\n", ch);
+                break;
+            }
+        case 3:
+            printf("'%c' is a Special Character.\n", ch);
+            break;
+        default:
+            printf("Invalid input.\n");
+    }
+    return 0;
+}
